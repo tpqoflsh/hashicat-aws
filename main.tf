@@ -126,6 +126,7 @@ resource "aws_instance" "hashicat" {
   tags = {
     Department = "devops"
     Name = "${var.prefix}-hashicat-instance"
+    Billable = "true"
   }
 }
 
